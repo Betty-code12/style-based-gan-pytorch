@@ -261,13 +261,13 @@ if __name__ == '__main__':
     parser.add_argument(
         '--phase',
         type=int,
-        default=600_000,
+        default=300_000,
         help='number of samples used for each training phases',
     )
     parser.add_argument('--lr', default=0.001, type=float, help='learning rate')
     parser.add_argument('--sched', action='store_true', help='use lr scheduling')
-    parser.add_argument('--init_size', default=8, type=int, help='initial image size')
-    parser.add_argument('--max_size', default=1024, type=int, help='max image size')
+    parser.add_argument('--init_size', default=128, type=int, help='initial image size')
+    parser.add_argument('--max_size', default=128, type=int, help='max image size')
     parser.add_argument(
         '--ckpt', default=None, type=str, help='load from previous checkpoints'
     )

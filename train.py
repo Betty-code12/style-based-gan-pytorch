@@ -54,7 +54,7 @@ def train(args, dataset, generator, discriminator):
     adjust_lr(g_optimizer, args.lr.get(resolution, 0.001))
     adjust_lr(d_optimizer, args.lr.get(resolution, 0.001))
 
-    pbar = tqdm(range(30_000))
+    pbar = tqdm(range(1000))
 
     requires_grad(generator, False)
     requires_grad(discriminator, True)

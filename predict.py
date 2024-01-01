@@ -9,7 +9,7 @@ import cog
 from generate import sample, get_mean_style
 from model import StyledGenerator
 
-SIZE = 1024
+SIZE = 128
 
 
 class Predictor(cog.Predictor):
